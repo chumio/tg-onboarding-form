@@ -61,7 +61,9 @@
     return s;
   }
 
-  function validEmail(e) { return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(e); }
+  function validEmail(e) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+}
 
   const form = document.getElementById('onboardForm');
   const msg  = document.getElementById('msg');
